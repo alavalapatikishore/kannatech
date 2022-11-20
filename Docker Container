@@ -1,0 +1,71 @@
+install one container and deploy sample html application
+
+first to check images in current machine 
+  sudo docker images
+  
+check containers are avalibale (running and existed)
+  sudo docker ps (showing all containers)
+  sudo docker ps -a (showing running containers)
+  
+go to docker hub and check ubuntu operation system image
+  
+now run ubunut image (pull the image)
+  sudo docker run -it ubuntu:latest bash
+  sudo docker ps -a
+
+check updates and install nginx web server top of container above
+  apt-get update
+  apt-get install nginx -y
+  
+By default nginx server comes with default port "80" check location as
+  cat /etc/nginx/sites-avaliable/defualt 
+  
+Run nginx in container after installed
+  ps aux
+  
+Then type nginx and enter and check again
+  ps aux (showing nginx is runnig)
+  
+ Then install crul 
+   apt-get install curl -y
+   
+ check curl command as localhost
+   curl localhost:80
+   so inside thek container it works
+   
+ The last step exit the container 
+ 
+ check containers 
+   sudo docker ps -a  (it showing exited)
+ 
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+  
